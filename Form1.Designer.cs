@@ -44,11 +44,11 @@
             this.btnConverti = new System.Windows.Forms.Button();
             this.btnCancella = new System.Windows.Forms.Button();
             this.grpInput = new System.Windows.Forms.GroupBox();
-            this.btnInput = new System.Windows.Forms.Button();
-            this.rdbInput1 = new System.Windows.Forms.RadioButton();
-            this.rdbInput2 = new System.Windows.Forms.RadioButton();
-            this.rdbInput3 = new System.Windows.Forms.RadioButton();
             this.rdbInput4 = new System.Windows.Forms.RadioButton();
+            this.rdbInput3 = new System.Windows.Forms.RadioButton();
+            this.rdbInput2 = new System.Windows.Forms.RadioButton();
+            this.rdbInput1 = new System.Windows.Forms.RadioButton();
+            this.btnInput = new System.Windows.Forms.Button();
             this.grpVisualizza.SuspendLayout();
             this.grpSelezioneV.SuspendLayout();
             this.grpConversione.SuspendLayout();
@@ -96,7 +96,6 @@
             this.chkValore4.TabIndex = 4;
             this.chkValore4.Text = "checkBox1";
             this.chkValore4.UseVisualStyleBackColor = true;
-            
             // 
             // chkValore3
             // 
@@ -107,7 +106,6 @@
             this.chkValore3.TabIndex = 3;
             this.chkValore3.Text = "checkBox1";
             this.chkValore3.UseVisualStyleBackColor = true;
-            
             // 
             // chkValore2
             // 
@@ -118,7 +116,6 @@
             this.chkValore2.TabIndex = 2;
             this.chkValore2.Text = "checkBox1";
             this.chkValore2.UseVisualStyleBackColor = true;
-           
             // 
             // chkValore1
             // 
@@ -129,7 +126,6 @@
             this.chkValore1.TabIndex = 1;
             this.chkValore1.Text = "checkBox1";
             this.chkValore1.UseVisualStyleBackColor = true;
-            
             // 
             // btnVisualizza
             // 
@@ -165,7 +161,6 @@
             this.rdbValore4.TabStop = true;
             this.rdbValore4.Text = "radioButton1";
             this.rdbValore4.UseVisualStyleBackColor = true;
-            
             // 
             // rdbValore3
             // 
@@ -177,7 +172,6 @@
             this.rdbValore3.TabStop = true;
             this.rdbValore3.Text = "radioButton1";
             this.rdbValore3.UseVisualStyleBackColor = true;
-            
             // 
             // rdbValore2
             // 
@@ -189,7 +183,6 @@
             this.rdbValore2.TabStop = true;
             this.rdbValore2.Text = "radioButton1";
             this.rdbValore2.UseVisualStyleBackColor = true;
-            
             // 
             // rdbValore1
             // 
@@ -201,7 +194,6 @@
             this.rdbValore1.TabStop = true;
             this.rdbValore1.Text = "radioButton1";
             this.rdbValore1.UseVisualStyleBackColor = true;
-            
             // 
             // btnConverti
             // 
@@ -237,37 +229,16 @@
             this.grpInput.TabStop = false;
             this.grpInput.Text = "groupBox1";
             // 
-            // btnInput
+            // rdbInput4
             // 
-            this.btnInput.Location = new System.Drawing.Point(6, 94);
-            this.btnInput.Name = "btnInput";
-            this.btnInput.Size = new System.Drawing.Size(171, 36);
-            this.btnInput.TabIndex = 0;
-            this.btnInput.Text = "button1";
-            this.btnInput.UseVisualStyleBackColor = true;
-            // 
-            // rdbInput1
-            // 
-            this.rdbInput1.AutoSize = true;
-            this.rdbInput1.Location = new System.Drawing.Point(6, 30);
-            this.rdbInput1.Name = "rdbInput1";
-            this.rdbInput1.Size = new System.Drawing.Size(85, 17);
-            this.rdbInput1.TabIndex = 1;
-            this.rdbInput1.TabStop = true;
-            this.rdbInput1.Text = "radioButton1";
-            this.rdbInput1.UseVisualStyleBackColor = true;
-            
-            // 
-            // rdbInput2
-            // 
-            this.rdbInput2.AutoSize = true;
-            this.rdbInput2.Location = new System.Drawing.Point(6, 71);
-            this.rdbInput2.Name = "rdbInput2";
-            this.rdbInput2.Size = new System.Drawing.Size(85, 17);
-            this.rdbInput2.TabIndex = 2;
-            this.rdbInput2.TabStop = true;
-            this.rdbInput2.Text = "radioButton1";
-            this.rdbInput2.UseVisualStyleBackColor = true;
+            this.rdbInput4.AutoSize = true;
+            this.rdbInput4.Location = new System.Drawing.Point(97, 71);
+            this.rdbInput4.Name = "rdbInput4";
+            this.rdbInput4.Size = new System.Drawing.Size(85, 17);
+            this.rdbInput4.TabIndex = 4;
+            this.rdbInput4.TabStop = true;
+            this.rdbInput4.Text = "radioButton1";
+            this.rdbInput4.UseVisualStyleBackColor = true;
             // 
             // rdbInput3
             // 
@@ -280,16 +251,37 @@
             this.rdbInput3.Text = "radioButton1";
             this.rdbInput3.UseVisualStyleBackColor = true;
             // 
-            // rdbInput4
+            // rdbInput2
             // 
-            this.rdbInput4.AutoSize = true;
-            this.rdbInput4.Location = new System.Drawing.Point(97, 71);
-            this.rdbInput4.Name = "rdbInput4";
-            this.rdbInput4.Size = new System.Drawing.Size(85, 17);
-            this.rdbInput4.TabIndex = 4;
-            this.rdbInput4.TabStop = true;
-            this.rdbInput4.Text = "radioButton1";
-            this.rdbInput4.UseVisualStyleBackColor = true;
+            this.rdbInput2.AutoSize = true;
+            this.rdbInput2.Location = new System.Drawing.Point(6, 71);
+            this.rdbInput2.Name = "rdbInput2";
+            this.rdbInput2.Size = new System.Drawing.Size(85, 17);
+            this.rdbInput2.TabIndex = 2;
+            this.rdbInput2.TabStop = true;
+            this.rdbInput2.Text = "radioButton1";
+            this.rdbInput2.UseVisualStyleBackColor = true;
+            // 
+            // rdbInput1
+            // 
+            this.rdbInput1.AutoSize = true;
+            this.rdbInput1.Location = new System.Drawing.Point(6, 30);
+            this.rdbInput1.Name = "rdbInput1";
+            this.rdbInput1.Size = new System.Drawing.Size(85, 17);
+            this.rdbInput1.TabIndex = 1;
+            this.rdbInput1.TabStop = true;
+            this.rdbInput1.Text = "radioButton1";
+            this.rdbInput1.UseVisualStyleBackColor = true;
+            // 
+            // btnInput
+            // 
+            this.btnInput.Location = new System.Drawing.Point(6, 94);
+            this.btnInput.Name = "btnInput";
+            this.btnInput.Size = new System.Drawing.Size(171, 36);
+            this.btnInput.TabIndex = 0;
+            this.btnInput.Text = "button1";
+            this.btnInput.UseVisualStyleBackColor = true;
+            this.btnInput.Click += new System.EventHandler(this.btnInput_Click);
             // 
             // frmMain
             // 

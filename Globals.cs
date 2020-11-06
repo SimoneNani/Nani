@@ -17,5 +17,6 @@ namespace Nani
         public static int[] visualizza = new int[4];
         public static int conversione = 0;                                  //valore indice 
         public static int decimale = 0;
+        public static int input = 0;
     }
 }

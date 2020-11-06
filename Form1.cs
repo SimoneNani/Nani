@@ -30,6 +30,7 @@ namespace Nani
 
             btnVisualizza.Enabled = false;
             btnConverti.Enabled = false;
+            btnInput.Enabled = false;
 
             //groupbox
             grpVisualizza.Text = "Valori binari";
@@ -95,7 +96,6 @@ namespace Nani
                 txtVisualizza.Text += "\r\n";
             }
         }
-
         private void RdbValore_CheckedChanged(object sender, EventArgs e)
         {
             RadioButton rdb = sender as RadioButton;
@@ -105,23 +105,22 @@ namespace Nani
             switch (valore)
             {
                 case "1":
-                    if (rdbValore1.Checked)
+                    if (rdb.Checked)
                         Globals.conversione = 0;     //Salvataggio indice 
                     break;
                 case "2":
-                    if (rdbValore2.Checked)
+                    if (rdb.Checked)
                         Globals.conversione = 1; break;
                 case "3":
-                    if (rdbValore3.Checked)
+                    if (rdb.Checked)
                         Globals.conversione = 2;      break;
                 case "4":
-                    if(rdbValore2.Checked)
+                    if(rdb.Checked)
                         Globals.conversione = 3; break;
                 default:
                     break;
             }
         }
-
         private void ChkValore_CheckedChanged(object sender, EventArgs e)
         {
             CheckBox chk = sender as CheckBox;
@@ -176,18 +175,26 @@ namespace Nani
                     break;
             }
         }
-
         private void RdbInput_CheckedChanged(object sender, EventArgs e)
         {
+            btnInput.Enabled = true;
             RadioButton rdb = sender as RadioButton;
             string rdb_selezionato = rdb.Name;
 
             switch (rdb_selezionato)
             {
-                case "rdbValore1": break;
-                case "rdbValore2": break;
-                case "rdbValore3": break;
-                case "rdbValore4": break;
+                case "rdbValore1":
+                    if (rdb.Checked)
+                        Globals.input = 0; break;
+                case "rdbValore2":
+                    if (rdb.Checked)
+                        Globals.input = 1; break;
+                case "rdbValore3":
+                    if (rdb.Checked)
+                        Globals.input = 2; break;
+                case "rdbValore4":
+                    if (rdb.Checked)
+                        Globals.input = 3; break;
                 default:
                     break;
             }
@@ -239,9 +246,7 @@ namespace Nani
                 {
                     for (int i = 0; i < j; i++)
                     {
-
                         aggiungi *= 2;
-
                     }
                     Globals.decimale += aggiungi;
                 }
@@ -253,6 +258,11 @@ namespace Nani
                 txtVisualizza.Text += Convert.ToString(mat[Globals.conversione, j]);
             }
             txtVisualizza.Text += "= " + Convert.ToString(Globals.decimale);
-        }    
+        }
+
+        private void btnInput_Click(object sender, EventArgs e)
+        {
+            btnInput.Enabled = false;
+        }
     }
 }
