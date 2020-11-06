@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nani", "Nani.csproj", "{44160E37-24B7-4594-A25D-A25BED4C7F90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44160E37-24B7-4594-A25D-A25BED4C7F90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44160E37-24B7-4594-A25D-A25BED4C7F90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44160E37-24B7-4594-A25D-A25BED4C7F90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44160E37-24B7-4594-A25D-A25BED4C7F90}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E862B6F-B92E-4B0C-8758-02D08EFBF669}
+	EndGlobalSection
+EndGlobal
