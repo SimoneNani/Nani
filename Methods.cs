@@ -19,5 +19,12 @@ namespace Nani
             }
             return true;
         }
+        public static void RiempiMatrice(string s)
+        {
+          for (int j = 0; j <= Globals.val.GetUpperBound(1); j++)
+                {
+                Globals.val[Globals.input, j] = Convert.ToInt32(s[j]-48);
+                }           
+        }
     }
 }

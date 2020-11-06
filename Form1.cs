@@ -37,6 +37,8 @@ namespace Nani
             grpSelezioneV.Text = "Visualizzazione selettiva";
             grpConversione.Text = "Selezione per conversione";
             grpInput.Text = "Input";
+            grpConversione.Enabled = false;
+            grpSelezioneV.Enabled= false;
 
             //Check box
             chkValore1.Text = "Valore 1";               //inzializzazione testo check box
@@ -84,37 +86,25 @@ namespace Nani
             rdbValore2.CheckedChanged += RdbValore_CheckedChanged;
             rdbValore3.CheckedChanged += RdbValore_CheckedChanged;
             rdbValore4.CheckedChanged += RdbValore_CheckedChanged;
-
-            //visualizzazione valori iniziali
-            int[,] mat = Globals.val;
-
-            for (int i = 0; i <= mat.GetUpperBound(0); i++)
-            {
-                txtVisualizza.Text += "N" + Convert.ToString(i + 1) + " ";           //stampa indice numer es N1
-                for (int j = 0; j <= mat.GetUpperBound(1); j++)
-                    txtVisualizza.Text = txtVisualizza.Text + Convert.ToString(mat[i, j]);      //stampa ogni numero
-                txtVisualizza.Text += "\r\n";
-            }
         }
         private void RdbValore_CheckedChanged(object sender, EventArgs e)
         {
             RadioButton rdb = sender as RadioButton;
-            Globals.decimale = 0;          //ripristino valore conversione
             btnConverti.Enabled = true;
             string valore = rdb.Name;
             switch (valore)
             {
-                case "1":
+                case "rdbValore1":
                     if (rdb.Checked)
                         Globals.conversione = 0;     //Salvataggio indice 
                     break;
-                case "2":
+                case "rdbValore2":
                     if (rdb.Checked)
                         Globals.conversione = 1; break;
-                case "3":
+                case "rdbValore3":
                     if (rdb.Checked)
                         Globals.conversione = 2;      break;
-                case "4":
+                case "rdbValore4":
                     if(rdb.Checked)
                         Globals.conversione = 3; break;
                 default:
@@ -183,17 +173,17 @@ namespace Nani
 
             switch (rdb_selezionato)
             {
-                case "rdbValore1":
-                    if (rdb.Checked)
+                case "rdbInput1":
+                    
                         Globals.input = 0; break;
-                case "rdbValore2":
-                    if (rdb.Checked)
+                case "rdbInput2":
+                    
                         Globals.input = 1; break;
-                case "rdbValore3":
-                    if (rdb.Checked)
+                case "rdbInput3":
+                   
                         Globals.input = 2; break;
-                case "rdbValore4":
-                    if (rdb.Checked)
+                case "rdbInput4":
+                    
                         Globals.input = 3; break;
                 default:
                     break;
@@ -252,17 +242,45 @@ namespace Nani
                 }
                 aggiungi = 1;
             }
-            txtVisualizza.Text = "N" + Convert.ToString(Globals.conversione + 1) + " ";
+            txtVisualizza.Text = "N" + Convert.ToString(Globals.conversione+1) + " ";
             for (int j = 0; j <= mat.GetUpperBound(1); j++)
             {
                 txtVisualizza.Text += Convert.ToString(mat[Globals.conversione, j]);
             }
             txtVisualizza.Text += "= " + Convert.ToString(Globals.decimale);
+            Globals.decimale = 0;
         }
-
         private void btnInput_Click(object sender, EventArgs e)
         {
             btnInput.Enabled = false;
+            if (Globals.count <= 4)
+            {
+                Methods.RiempiMatrice(txtVisualizza.Text);
+                switch (Globals.input)
+                {
+                    case 0: rdbInput1.Enabled = false; ;break;
+                    case 1: rdbInput2.Enabled = false; ; break;
+                    case 2: rdbInput3.Enabled = false; ; break;
+                    case 3: rdbInput4.Enabled = false; ; break;
+                }
+            }
+            Globals.count++;
+            if(Globals.count>=4)
+            {
+                //visualizzazione valori iniziali
+                int[,] mat = Globals.val;
+                txtVisualizza.Text = "";
+                for (int i = 0; i <= mat.GetUpperBound(0); i++)
+                {
+                    txtVisualizza.Text += "N" + Convert.ToString(i + 1) + " ";           //stampa indice numer es N1
+                    for (int j = 0; j <= mat.GetUpperBound(1); j++)
+                        txtVisualizza.Text = txtVisualizza.Text + Convert.ToString(mat[i, j]);      //stampa ogni numero
+                    txtVisualizza.Text += "\r\n";
+                }
+
+                grpConversione.Enabled = true;
+                grpSelezioneV.Enabled = true;
+            }            
         }
     }
 }
