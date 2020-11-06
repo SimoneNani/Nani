@@ -96,7 +96,7 @@
             this.chkValore4.TabIndex = 4;
             this.chkValore4.Text = "checkBox1";
             this.chkValore4.UseVisualStyleBackColor = true;
-            this.chkValore4.CheckedChanged += new System.EventHandler(this.chkValore4_CheckedChanged);
+            
             // 
             // chkValore3
             // 
@@ -107,7 +107,7 @@
             this.chkValore3.TabIndex = 3;
             this.chkValore3.Text = "checkBox1";
             this.chkValore3.UseVisualStyleBackColor = true;
-            this.chkValore3.CheckedChanged += new System.EventHandler(this.chkValore3_CheckedChanged);
+            
             // 
             // chkValore2
             // 
@@ -118,7 +118,7 @@
             this.chkValore2.TabIndex = 2;
             this.chkValore2.Text = "checkBox1";
             this.chkValore2.UseVisualStyleBackColor = true;
-            this.chkValore2.CheckedChanged += new System.EventHandler(this.chkValore2_CheckedChanged);
+           
             // 
             // chkValore1
             // 
@@ -129,7 +129,7 @@
             this.chkValore1.TabIndex = 1;
             this.chkValore1.Text = "checkBox1";
             this.chkValore1.UseVisualStyleBackColor = true;
-            this.chkValore1.CheckedChanged += new System.EventHandler(this.chkValore1_CheckedChanged);
+            
             // 
             // btnVisualizza
             // 
@@ -165,7 +165,7 @@
             this.rdbValore4.TabStop = true;
             this.rdbValore4.Text = "radioButton1";
             this.rdbValore4.UseVisualStyleBackColor = true;
-            this.rdbValore4.CheckedChanged += new System.EventHandler(this.rdbValore4_CheckedChanged);
+            
             // 
             // rdbValore3
             // 
@@ -177,7 +177,7 @@
             this.rdbValore3.TabStop = true;
             this.rdbValore3.Text = "radioButton1";
             this.rdbValore3.UseVisualStyleBackColor = true;
-            this.rdbValore3.CheckedChanged += new System.EventHandler(this.rdbValore3_CheckedChanged);
+            
             // 
             // rdbValore2
             // 
@@ -189,7 +189,7 @@
             this.rdbValore2.TabStop = true;
             this.rdbValore2.Text = "radioButton1";
             this.rdbValore2.UseVisualStyleBackColor = true;
-            this.rdbValore2.CheckedChanged += new System.EventHandler(this.rdbValore2_CheckedChanged);
+            
             // 
             // rdbValore1
             // 
@@ -201,7 +201,7 @@
             this.rdbValore1.TabStop = true;
             this.rdbValore1.Text = "radioButton1";
             this.rdbValore1.UseVisualStyleBackColor = true;
-            this.rdbValore1.CheckedChanged += new System.EventHandler(this.rdbValore1_CheckedChanged);
+            
             // 
             // btnConverti
             // 
